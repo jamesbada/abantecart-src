@@ -150,8 +150,9 @@ class ControllerPagesAccountCreate extends AController{
 				array (
 						'type'  => 'input',
 						'name'  => 'telephone',
-						'value' => $this->request->post['telephone']
-				));
+						'value' => $this->request->post['telephone'],
+						'value'=> true));
+				
 		$this->data['form']['fields']['general']['fax'] = $form->getFieldHtml(
 				array (
 						'type'     => 'input',
